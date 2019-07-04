@@ -5,10 +5,11 @@ import random
 class StratifiedKFoldCrossValidation(KFoldCrossValidation):
     def __init__(self, instanceLists, K, seed):
         self.instanceLists = instanceLists
+        self.N = []
         for i in range(len(instanceLists)):
             random.seed(seed)
             random.shuffle(instanceLists[i])
-            self.N[i] = len(instanceLists[i])
+            self.N.append(len(instanceLists[i]))
         self.K = K
 
     def getTrainFold(self, k):
