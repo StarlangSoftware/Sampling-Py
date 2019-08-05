@@ -1,4 +1,4 @@
-import CrossValidation
+from Sampling import CrossValidation
 import random
 
 

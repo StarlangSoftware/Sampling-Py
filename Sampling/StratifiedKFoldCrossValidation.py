@@ -1,4 +1,4 @@
-import KFoldCrossValidation
+from Sampling import KFoldCrossValidation
 import random
 
 
