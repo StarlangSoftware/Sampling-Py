@@ -1,8 +1,7 @@
-import abc
 from abc import abstractmethod
 
 
-class CrossValidation(abc):
+class CrossValidation(object):
 
     @abstractmethod
     def getTrainFold(self, k: int) -> list:
