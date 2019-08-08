@@ -1,12 +1,12 @@
 from setuptools import setup
 
 setup(
-    name='Sampling',
-    version='',
+    name='NlpToolkit-Sampling',
+    version='1.0.0',
     packages=['Sampling'],
-    url='',
+    url='https://github.com/olcaytaner/Sampling-Py',
     license='',
-    author='olcay',
-    author_email='',
-    description=''
+    author='olcaytaner',
+    author_email='olcaytaner@isikun.edu.tr',
+    description='Data sampling library'
 )
