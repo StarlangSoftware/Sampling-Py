@@ -1,8 +1,9 @@
-from Sampling import KFoldCrossValidation
+from Sampling.KFoldCrossValidation import KFoldCrossValidation
 import random
 
 
 class StratifiedKFoldCrossValidation(KFoldCrossValidation):
+
     def __init__(self, instanceLists: list, K: int, seed: int):
         self.instanceLists = instanceLists
         self.N = []

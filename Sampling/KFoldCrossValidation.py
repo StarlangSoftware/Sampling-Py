@@ -1,8 +1,9 @@
-from Sampling import CrossValidation
+from Sampling.CrossValidation import CrossValidation
 import random
 
 
 class KFoldCrossValidation(CrossValidation):
+
     def __init__(self, instanceList: list, K: int, seed: int):
         self.instanceList = instanceList
         random.seed(seed)
