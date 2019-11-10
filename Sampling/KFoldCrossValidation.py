@@ -4,6 +4,9 @@ import random
 
 class KFoldCrossValidation(CrossValidation):
 
+    __instanceList: list
+    __N: int
+
     """
     A constructor of KFoldCrossValidation class which takes a sample as an array of instances, a K (K in K-fold
     cross-validation) and a seed number, then shuffles the original sample using this seed as random number.
@@ -18,10 +21,10 @@ class KFoldCrossValidation(CrossValidation):
         Random number to create K-fold sample(s)
     """
     def __init__(self, instanceList: list, K: int, seed: int):
-        self.instanceList = instanceList
+        self.__instanceList = instanceList
         random.seed(seed)
         random.shuffle(instanceList)
-        self.N = len(instanceList)
+        self.__N = len(instanceList)
         self.K = K
 
     """
@@ -39,10 +42,10 @@ class KFoldCrossValidation(CrossValidation):
     """
     def getTrainFold(self, k: int) -> list:
         trainFold = []
-        for i in range((k * self.N) // self.K):
-            trainFold.append(self.instanceList[i])
-        for i in range(((k + 1) * self.N) // self.K):
-            trainFold.append(self.instanceList[i])
+        for i in range((k * self.__N) // self.K):
+            trainFold.append(self.__instanceList[i])
+        for i in range(((k + 1) * self.__N) // self.K):
+            trainFold.append(self.__instanceList[i])
         return trainFold
 
     """
@@ -60,6 +63,6 @@ class KFoldCrossValidation(CrossValidation):
     """
     def getTestFold(self, k: int) -> list:
         testFold = []
-        for i in range((k * self.N) // self.K, ((k + 1) * self.N) // self.K):
-            testFold.append(self.instanceList[i])
+        for i in range((k * self.__N) // self.K, ((k + 1) * self.__N) // self.K):
+            testFold.append(self.__instanceList[i])
         return testFold
