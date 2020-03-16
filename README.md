@@ -62,27 +62,27 @@ Detailed Description
 
 k. eğitim kümesini elde etmek için
 
-	ArrayList<T> getTrainFold(int k)
+	getTrainFold(self, k: int) -> list
 
 k. test kümesini elde etmek için
 
-	ArrayList<T> getTestFold(int k)
+	getTestFold(self, k: int) -> list
 
 ## Bootstrap
 
 Bootstrap için BootStrap sınıfı
 
-	Bootstrap(ArrayList<T> instanceList, int seed)
+	Bootstrap(self, instanceList: list, seed: int)
 
 Örneğin elimizdeki veriler a adlı ArrayList'te olsun. Bu veriler üstünden bir bootstrap 
 örneklemi tanımlamak için (5 burada rasgelelik getiren seed'i göstermektedir. 5 
 değiştirilerek farklı samplelar elde edilebilir)
 
-	bootstrap = Bootstrap(a, 5);
+	bootstrap = Bootstrap(a, 5)
 
 ardından üretilen sample'ı çekmek için ise
 
-	sample = bootstrap.getSample();
+	sample = bootstrap.getSample()
 
 yazılır.
 
@@ -90,13 +90,13 @@ yazılır.
 
 K kat çapraz geçerleme için KFoldCrossValidation sınıfı
 
-	KFoldCrossValidation(List<T> instanceList, int K, int seed)
+	KFoldCrossValidation(self, instanceList: list, K: int, seed: int)
 
 Örneğin elimizdeki veriler a adlı ArrayList'te olsun. Bu veriler üstünden 10 kat çapraz 
 geçerleme yapmak için (2 burada rasgelelik getiren seed'i göstermektedir. 2 
 değiştirilerek farklı samplelar elde edilebilir)
 
-	kfold = KFoldCrossValidation(a, 10, 2);
+	kfold = KFoldCrossValidation(a, 10, 2)
 
 ardından yukarıda belirtilen getTrainFold ve getTestFold metodları ile sırasıyla i. eğitim
 ve test kümeleri elde edilebilir. 
@@ -105,7 +105,7 @@ ve test kümeleri elde edilebilir.
 
 Stratified K kat çapraz geçerleme için StratifiedKFoldCrossValidation sınıfı
 
-	StratifiedKFoldCrossValidation(ArrayList<T>[] instanceLists, int K, int seed)
+	StratifiedKFoldCrossValidation(self, instanceLists: list, K: int, seed: int)
 
 Örneğin elimizdeki veriler a adlı ArrayList of listte olsun. Stratified bir çapraz 
 geçerlemede sınıflara ait veriler o sınıfın oranında temsil edildikleri için her bir 
@@ -113,7 +113,7 @@ sınıfa ait verilerin ayrı ayrı ArrayList'te olmaları gerekmektedir. Bu veri
 30 kat çapraz geçerleme yapmak için (4 burada rasgelelik getiren seed'i göstermektedir. 4 
 değiştirilerek farklı samplelar elde edilebilir)
 
-	stratified = StratifiedKFoldCrossValidation(a, 30, 4);
+	stratified = StratifiedKFoldCrossValidation(a, 30, 4)
 
 ardından yukarıda belirtilen getTrainFold ve getTestFold metodları ile sırasıyla i. eğitim
 ve test kümeleri elde edilebilir. 
