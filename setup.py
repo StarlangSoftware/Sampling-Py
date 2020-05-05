@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='NlpToolkit-Sampling',
-    version='1.0.3',
+    version='1.0.4',
     packages=['Sampling'],
     url='https://github.com/olcaytaner/Sampling-Py',
     license='',

@@ -44,7 +44,7 @@ class KFoldCrossValidation(CrossValidation):
         trainFold = []
         for i in range((k * self.__N) // self.K):
             trainFold.append(self.__instanceList[i])
-        for i in range(((k + 1) * self.__N) // self.K):
+        for i in range(((k + 1) * self.__N) // self.K, self.__N):
             trainFold.append(self.__instanceList[i])
         return trainFold
 
