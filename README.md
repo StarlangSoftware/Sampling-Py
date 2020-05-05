@@ -1,10 +1,8 @@
 # Sampling
 
-
 For Developers
 ============
-You can also see either [Java](https://github.com/olcaytaner/Sampling) 
-or [C++](https://github.com/olcaytaner/Sampling-CPP) repository.
+You can also see [Java](https://github.com/olcaytaner/Sampling), [C++](https://github.com/olcaytaner/Sampling-CPP), or [C#](https://github.com/olcaytaner/Sampling-CS) repository.
 
 ## Requirements
 
