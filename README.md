@@ -1,6 +1,6 @@
 For Developers
 ============
-You can also see [Java](https://github.com/starlangsoftware/Sampling), [C++](https://github.com/starlangsoftware/Sampling-CPP), or [C#](https://github.com/starlangsoftware/Sampling-CS) repository.
+You can also see [Java](https://github.com/starlangsoftware/Sampling), [C++](https://github.com/starlangsoftware/Sampling-CPP), [Swift](https://github.com/starlangsoftware/Sampling-Swift), or [C#](https://github.com/starlangsoftware/Sampling-CS) repository.
 
 ## Requirements
 
