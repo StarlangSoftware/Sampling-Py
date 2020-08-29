@@ -333,3 +333,10 @@ NlpToolkit_Sampling.egg-info/SOURCES.txt
 NlpToolkit_Sampling.egg-info/top_level.txt
 .idea/inspectionProfiles/Project_Default.xml
 dist/NlpToolkit-Sampling-1.0.2.tar.gz
+.idea/misc.xml
+.idea/modules.xml
+.idea/Sampling.iml
+.idea/vcs.xml
+dist/NlpToolkit-Sampling-1.0.1.tar.gz
+dist/NlpToolkit-Sampling-1.0.3.tar.gz
+dist/NlpToolkit-Sampling-1.0.4.tar.gz
