@@ -4,9 +4,9 @@ setup(
     name='NlpToolkit-Sampling',
     version='1.0.4',
     packages=['Sampling'],
-    url='https://github.com/olcaytaner/Sampling-Py',
+    url='https://github.com/StarlangSoftware/Sampling-Py',
     license='',
     author='olcaytaner',
-    author_email='olcaytaner@isikun.edu.tr',
+    author_email='olcay.yildiz@ozyegin.edu.tr',
     description='Data sampling library'
 )
