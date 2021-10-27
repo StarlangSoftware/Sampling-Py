@@ -14,7 +14,7 @@ If we have very small datasets, we do not insist on the non-overlap of training 
 For Developers
 ============
 
-You can also see [Cython](https://github.com/starlangsoftware/Sampling-Cy), [Java](https://github.com/starlangsoftware/Sampling), [C++](https://github.com/starlangsoftware/Sampling-CPP), [Swift](https://github.com/starlangsoftware/Sampling-Swift), or [C#](https://github.com/starlangsoftware/Sampling-CS) repository.
+You can also see [Cython](https://github.com/starlangsoftware/Sampling-Cy), [Java](https://github.com/starlangsoftware/Sampling), [C++](https://github.com/starlangsoftware/Sampling-CPP), [Swift](https://github.com/starlangsoftware/Sampling-Swift), [Js](https://github.com/starlangsoftware/Sampling-Js), or [C#](https://github.com/starlangsoftware/Sampling-CS) repository.
 
 ## Requirements
 
