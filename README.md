@@ -1,4 +1,4 @@
-Sampling Strategies [<img src="https://github.com/StarlangSoftware/Sampling/blob/master/video.jpg" width="5%">](https://youtu.be/wijWOiv70nE)
+Sampling Strategies [<img src="https://github.com/StarlangSoftware/Sampling/blob/master/video.jpg" width="10%">](https://youtu.be/wijWOiv70nE)
 ============
 
 ## K-Fold cross-validation
