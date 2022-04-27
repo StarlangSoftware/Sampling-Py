@@ -1,4 +1,4 @@
-Sampling Strategies [<img src="https://github.com/StarlangSoftware/Sampling/blob/master/video.jpg" width="10%">](https://youtu.be/wijWOiv70nE)
+Sampling Strategies
 ============
 
 ## K-Fold cross-validation
@@ -10,6 +10,11 @@ If we have more computation power, we can have multiple runs of K-fold cross-val
 ## Bootstrapping
 
 If we have very small datasets, we do not insist on the non-overlap of training and validation sets. In bootstrapping, we generate K multiple training sets, where each training set contains N examples (like the original dataset). To get N examples, we draw examples with replacement. For the validation set, we use the original dataset. The drawback of bootstrapping is that the bootstrap samples overlap more than the cross-validation sample, hence they are more dependent.
+
+Video Lectures
+============
+
+[<img src="https://github.com/StarlangSoftware/Sampling/blob/master/video.jpg" width="50%">](https://youtu.be/wijWOiv70nE)
 
 For Developers
 ============
