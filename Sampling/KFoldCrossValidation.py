@@ -4,27 +4,30 @@ import random
 
 class KFoldCrossValidation(CrossValidation):
 
-    __instanceList: list
+    __instance_list: list
     __N: int
 
-    def __init__(self, instanceList: list, K: int, seed: int):
+    def __init__(self,
+                 instance_list: list,
+                 K: int,
+                 seed: int):
         """
         A constructor of KFoldCrossValidation class which takes a sample as an array of instances, a K (K in K-fold
         cross-validation) and a seed number, then shuffles the original sample using this seed as random number.
 
         PARAMETERS
         ----------
-        instanceList : list
+        instance_list : list
             Original sample
         K : int
             K in K-fold cross-validation
         seed : int
             Random number to create K-fold sample(s)
         """
-        self.__instanceList = instanceList
+        self.__instance_list = instance_list
         random.seed(seed)
-        random.shuffle(instanceList)
-        self.__N = len(instanceList)
+        random.shuffle(instance_list)
+        self.__N = len(instance_list)
         self.K = K
 
     def getTrainFold(self, k: int) -> list:
@@ -41,12 +44,12 @@ class KFoldCrossValidation(CrossValidation):
         list
             Produced training sample
         """
-        trainFold = []
+        train_fold = []
         for i in range((k * self.__N) // self.K):
-            trainFold.append(self.__instanceList[i])
+            train_fold.append(self.__instance_list[i])
         for i in range(((k + 1) * self.__N) // self.K, self.__N):
-            trainFold.append(self.__instanceList[i])
-        return trainFold
+            train_fold.append(self.__instance_list[i])
+        return train_fold
 
     def getTestFold(self, k: int) -> list:
         """
@@ -62,7 +65,7 @@ class KFoldCrossValidation(CrossValidation):
         list
             Produced testing sample
         """
-        testFold = []
+        test_fold = []
         for i in range((k * self.__N) // self.K, ((k + 1) * self.__N) // self.K):
-            testFold.append(self.__instanceList[i])
-        return testFold
+            test_fold.append(self.__instance_list[i])
+        return test_fold

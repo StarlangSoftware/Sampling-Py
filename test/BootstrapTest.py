@@ -14,7 +14,7 @@ class BootstrapTest(unittest.TestCase):
     def test_SmallSample(self):
         bootstrap = Bootstrap(self.smallSample, 1)
         sample = ["3", "10", "2", "5", "2", "8", "8", "8", "7", "4"]
-        self.assertEquals(sample, bootstrap.getSample())
+        self.assertEqual(sample, bootstrap.getSample())
 
     def test_LargeSample(self):
         bootstrap = Bootstrap(self.largeSample, 1)

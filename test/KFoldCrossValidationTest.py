@@ -14,17 +14,17 @@ class KFoldCrossValidationTest(unittest.TestCase):
     def test_SmallSample10Fold(self):
         kFoldCrossValidation = KFoldCrossValidation(self.smallSample, 10, 1)
         expected1 = ["7"]
-        self.assertEquals(expected1, kFoldCrossValidation.getTestFold(0))
+        self.assertEqual(expected1, kFoldCrossValidation.getTestFold(0))
 
     def test_SmallSample5Fold(self):
         kFoldCrossValidation = KFoldCrossValidation(self.smallSample, 5, 1)
         expected2 = ["7", "9"]
-        self.assertEquals(expected2, kFoldCrossValidation.getTestFold(0))
+        self.assertEqual(expected2, kFoldCrossValidation.getTestFold(0))
 
     def test_SmallSample2Fold(self):
         kFoldCrossValidation = KFoldCrossValidation(self.smallSample, 2, 1)
         expected3 = ["7", "9", "10", "8", "6"]
-        self.assertEquals(expected3, kFoldCrossValidation.getTestFold(0))
+        self.assertEqual(expected3, kFoldCrossValidation.getTestFold(0))
 
     def test_LargeSample10Fold(self):
         kFoldCrossValidation = KFoldCrossValidation(self.largeSample, 10, 1)
@@ -34,9 +34,9 @@ class KFoldCrossValidationTest(unittest.TestCase):
             testFold = kFoldCrossValidation.getTestFold(i)
             items.update(trainFold)
             items.update(testFold)
-            self.assertEquals(100, len(testFold))
-            self.assertEquals(900, len(trainFold))
-            self.assertEquals(1000, len(items))
+            self.assertEqual(100, len(testFold))
+            self.assertEqual(900, len(trainFold))
+            self.assertEqual(1000, len(items))
 
     def test_LargeSample5Fold(self):
         kFoldCrossValidation = KFoldCrossValidation(self.largeSample, 5, 1)
@@ -46,9 +46,9 @@ class KFoldCrossValidationTest(unittest.TestCase):
             testFold = kFoldCrossValidation.getTestFold(i)
             items.update(trainFold)
             items.update(testFold)
-            self.assertEquals(200, len(testFold))
-            self.assertEquals(800, len(trainFold))
-            self.assertEquals(1000, len(items))
+            self.assertEqual(200, len(testFold))
+            self.assertEqual(800, len(trainFold))
+            self.assertEqual(1000, len(items))
 
     def test_LargeSample2Fold(self):
         kFoldCrossValidation = KFoldCrossValidation(self.largeSample, 2, 1)
@@ -58,9 +58,9 @@ class KFoldCrossValidationTest(unittest.TestCase):
             testFold = kFoldCrossValidation.getTestFold(i)
             items.update(trainFold)
             items.update(testFold)
-            self.assertEquals(500, len(testFold))
-            self.assertEquals(500, len(trainFold))
-            self.assertEquals(1000, len(items))
+            self.assertEqual(500, len(testFold))
+            self.assertEqual(500, len(trainFold))
+            self.assertEqual(1000, len(items))
 
 
 if __name__ == '__main__':
