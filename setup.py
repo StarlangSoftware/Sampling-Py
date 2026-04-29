@@ -5,8 +5,8 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 
 setup(
-    name='NlpToolkit-Sampling',
-    version='1.0.7',
+    name='nlptoolkit_sampling',
+    version='1.0.8',
     packages=['Sampling'],
     url='https://github.com/StarlangSoftware/Sampling-Py',
     license='',
